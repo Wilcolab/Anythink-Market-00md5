@@ -44,12 +44,12 @@ router.get("/", auth.optional, function(req, res, next) {
   
   if (typeof req.query.limit !== "undefined") {
     limit = req.query.limit;
-    console.log(limit)
+    
   }
   if (typeof req.query.title !== "undefined") {
     title = req.query.title;
     console.log(title);
-    query.title = title;
+    
   }
 
   if (typeof req.query.offset !== "undefined") {
