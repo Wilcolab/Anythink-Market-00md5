@@ -49,6 +49,7 @@ router.get("/", auth.optional, function(req, res, next) {
   if (typeof req.query.title !== "undefined") {
     title = req.query.title;
     console.log(title);
+    query.title = title;
     
   }
 
